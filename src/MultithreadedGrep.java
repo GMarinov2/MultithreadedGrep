@@ -8,8 +8,13 @@ public class MultithreadedGrep {
 	//		return;
 	//	}
 		Main main = new Main("C:\\Users\\Marinov\\Documents\\TestDir", " z", 5);
-	//	Main a = new Main(args[0],args[1],Integer.parseInt(args[2]));
+	/*	String[] input = parseArgs(args);
+		String path = input[0];
+		String regex = input[1];
+		int threadCount = input[2];
+		Main main = new Main(path,regex,threadCount);
 
+	*/
 		main.collectFiles();
 		main.filterFiles();
 	}
