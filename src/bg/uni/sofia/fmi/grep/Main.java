@@ -13,22 +13,6 @@ public class Main {
 	private String search;
 	private int maxThreads;
 	
-	public Set<Path> getCollectedFiles() {
-		return this.collectedFiles;
-	}
-	
-	public Path getPath() {
-		return this.path; 
-	}
-	
-	public String getSearch() {
-		return this.search;
-	}
-	
-	public int getMaxThreads() {
-		return this.maxThreads;
-	}
-	
 	public Main(String path, String search, int maxThreads) {
 		this.path = Paths.get(path);
 		this.collectedFiles = new HashSet<>();
